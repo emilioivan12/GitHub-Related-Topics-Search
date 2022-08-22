@@ -24,6 +24,7 @@ I chose to use two libraries:
 ---
 #### Additional Features - User
 - **NON-JS Environment** : I would like to move this to NextJS, with this I can make the app available even on non-JS environments.
+- **Proxy**: With NextJS, I could also set the github keys on the server, instead of setting them on the client for security reasons. Other solution it could be to add a login page to let the user use their own key.
 - **Internationalization**: There are not too many quotes on the app, with more time it could be easy to add I18n in order to handle different languages.
 - **Accessibility**: I haven't take too much attention into a11n since MUI handle most of them really well. However, I would like to pay more attention in this to confirm that all the scenarios are handled.
 - **More Scenarios**: Most of the componets are decoupled of "Topic" itself, so it would be easier to expand the app functionality to also handle any other GitHub property or from any other source too.

@@ -7,7 +7,7 @@
 
 ## Setting up development environment
 - Clone the repo `git clone https://github.com/emilioivan12/GitHub-Related-Topics-Search.git`
-- Create an empty `.env` file in the root directory and fill it with your access token (Please take a look at .env.example for references)
+- Create an empty `.env` file in the root directory and fill it with your access token VITE_GITHUB_ENDPOINT and VITE_GITHUB_ACCESS_TOKEN (Please take a look at .env.example for references)
 - `npm install` or `pnpm install`
 - `npm run dev`
 - App should be running on `http://localhost:5173/`

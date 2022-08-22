@@ -30,6 +30,7 @@ I chose to use two libraries:
 - **More Scenarios**: Most of the componets are decoupled of "Topic" itself, so it would be easier to expand the app functionality to also handle any other GitHub property or from any other source too.
 ---
 #### Additional Features - Developer
+- **Unit testing**: Unfortunately, I didn't have time to add unit tests, with more time I would use the testing library to test the components and pure jest to test the services, utils, etc...
 - **End-2-End Testing**: I would like to add End to End testing using Cypress, to also test the full user experience instead of just having unit tests.
 - **Component Documentation**: If the app is going to handle more scenarios, I would like to add Storybook, to document all the components created, to improve the development experience.
 

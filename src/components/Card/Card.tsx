@@ -23,7 +23,7 @@ const Card: React.FC<Props> = ({
   return (
     <CardContainer variant="outlined" onClick={onClick} primary={primary}>
       <CardContent sx={{textAlign:'center'}}>
-        <Typography variant="h5" component="div">
+        <Typography variant="h5" component="h5">
           {title}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary" variant="subtitle2">

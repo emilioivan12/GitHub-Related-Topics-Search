@@ -4,7 +4,8 @@
  * @param str
  */
 export const sanitizeString = (str: string): string => {
+  str = str.trim();
   str = str.split(" ").join("-");
   str = str.replace(/[^a-z0-9áéíóúñü .,_-]/gim, "");
-  return str.trim().toLowerCase();
+  return str.toLowerCase();
 };

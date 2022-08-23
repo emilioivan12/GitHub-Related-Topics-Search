@@ -24,7 +24,7 @@ describe("useGetGitHubTopic", () => {
   test("Always return the data and loading returned by useQuery", () => {
     const input = "react";
     const result = renderHook(() => useGetGitHubTopic(input));
-    console.log(result.result.current);
+
     expect(result.result.current.topic).toBe(topic);
     expect(result.result.current.loading).toBe(loading);
   });

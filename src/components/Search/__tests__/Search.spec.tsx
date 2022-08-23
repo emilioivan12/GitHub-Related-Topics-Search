@@ -2,12 +2,10 @@ import Search from "../Search";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 describe("Card", () => {
-
   it("If input text change then onChange function should be called", () => {
     const onChange = jest.fn();
-    render(
-      <Search handleSubmit={() => undefined} value="" onChange={onChange} />
-    );
+    const handleSubmit = jest.fn((e) => e.preventDefault());
+    render(<Search handleSubmit={handleSubmit} value="" onChange={onChange} />);
     fireEvent.change(screen.getByRole("textbox"), {
       target: {
         value: "test",
@@ -18,7 +16,7 @@ describe("Card", () => {
   });
 
   it("If submit button trigger then handleSubmit function should be called", () => {
-    const handleSubmit = jest.fn();
+    const handleSubmit = jest.fn((e) => e.preventDefault());
     render(
       <Search handleSubmit={handleSubmit} value="" onChange={() => undefined} />
     );
@@ -29,9 +27,10 @@ describe("Card", () => {
 
   it("If value is provided then value is displayed on the scren", () => {
     const valueInput = "valueInput";
+    const handleSubmit = jest.fn((e) => e.preventDefault());
     render(
       <Search
-        handleSubmit={() => undefined}
+        handleSubmit={handleSubmit}
         value={valueInput}
         onChange={() => undefined}
       />
@@ -40,5 +39,4 @@ describe("Card", () => {
 
     expect(htmlInput.value).toBe(valueInput);
   });
-  
 });

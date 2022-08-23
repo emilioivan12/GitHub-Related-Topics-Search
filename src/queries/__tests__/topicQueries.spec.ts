@@ -18,7 +18,7 @@ describe("topicQueries", () => {
           }
         }
       `;
-      console.log(expectedOutput);
+
       expect(getTopicQueryByName().loc?.source).toBe(
         expectedOutput.loc?.source
       );
@@ -40,7 +40,7 @@ describe("topicQueries", () => {
           }
         }
       `;
-      console.log(expectedOutput);
+
       expect(getTopicQueryByName(input).loc?.source).toBe(
         expectedOutput.loc?.source
       );

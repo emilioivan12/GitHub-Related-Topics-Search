@@ -1,4 +1,4 @@
-import { useQuery } from "@apollo/client/react/hooks/useQuery";
+import { useQuery } from "@apollo/client";
 import { mapFromDTOtoTopic, TopicDTO } from "../mappers/topicMapper";
 import { getTopicQueryByName } from "../queries/topicQueries";
 
